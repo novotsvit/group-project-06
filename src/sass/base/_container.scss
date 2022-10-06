@@ -1,0 +1,30 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+//? ================== MOBILE VERSION ==================
+
+@media screen and (min-width: $mobile) {
+  .container {
+    width: 480px;
+  }
+}
+
+//? ================== TABLET VERSION ==================
+
+@media screen and (min-width: $tablet) {
+  .container {
+    width: 768px;
+  }
+}
+
+//? ================== DESKTOP VERSION ==================
+
+@media screen and (min-width: $desktop) {
+  .container {
+    width: 1200px;
+  }
+}

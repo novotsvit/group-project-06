@@ -1,4 +1,62 @@
 .footer {
+  background-color: $bg-color;
+
+  &__text {
+    font-family: 'Montserrat';
+    @include font(700, 18px, 22px);
+    text-transform: uppercase;
+    color: $secondary-text-color;
+
+    margin-bottom: 16px;
+  }
   &__title {
+    font-family: 'Montserrat';
+    @include font(700, 34px, 41px);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+
+    margin-bottom: 42px;
+  }
+}
+
+.footer-list {
+  justify-content: flex-end;
+  margin-bottom: 38px;
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  &__link {
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    fill: $bg-color;
+    align-items: center;
+    transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-bottom: 40px;
+
+  @include font(700, 12px, 22px);
+
+  &__text {
+    color: $primary-text-color;
+    margin-right: 2px;
+  }
+
+  &__tel {
+    color: $secondary-text-color;
+    text-decoration: none;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

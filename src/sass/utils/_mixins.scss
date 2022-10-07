@@ -3,13 +3,13 @@
   justify-content: $main-axis;
   align-items: $cross-axis;
 }
-// @include flexCenter ();
+// @include flexCenter();
 // @include flexCenter(flex, center, center);
 
 @mixin font($fw, $fs, $lh) {
   font-weight: $fw;
   font-size: $fs;
-  line-height: calc($fs / $lh);
+  line-height: calc($lh / $fs);
 }
 @mixin absCenteredY() {
   position: absolute;

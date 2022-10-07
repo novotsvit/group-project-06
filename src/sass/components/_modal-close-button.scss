@@ -2,12 +2,10 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter();
   width: 16px;
   height: 16px;
-  border-radius: 50%;
+  padding: 0;
   fill: $primary-text-color;
   background-color: transparent;
   transition: fill 250ms ease-out;

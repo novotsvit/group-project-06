@@ -1,0 +1,124 @@
+<div class="backdrop__is-hidden" data-modal-buy-now>
+  <div class="modal">
+    <button type="button" class="modal-close-button" data-modal-close-buy-now>
+      <svg>
+        <use href="./images/icons.svg#cross-close"></use>
+      </svg>
+    </button>
+    <form>
+      <p>Buy now</p>
+      <div>
+        <ul>
+          <li>
+            <input id="icecream-check" type="checkbox" name="cocktail-check" />
+            <label for="icecream-check">
+              <picture>
+                <source
+                  srcset="./images/modal-buy-now/icecream-tabdesk-x1-min.png x1,
+                ./images/modal-buy-now/icecream-tabdesk-x2-min.png x2"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/modal-buy-now/icecream-mobile-x1-min.png x1,
+                ./images/modal-buy-now/icecream-mobile-x2-min.png x2
+                "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/modal-buy-now/icecream-mobile-x1-min.png"
+                  alt="Ice cream"
+                />
+              </picture>
+              <p>ice cream</p>
+            </label>
+          </li>
+          <li>
+            <input id="icecoffee-check" type="checkbox" name="cocktail-check" />
+            <label for="icecoffee-check">
+              <picture>
+                <source
+                  srcset="./images/modal-buy-now/icecoffee-tabdesk-x1-min.png x1,
+                ./images/modal-buy-now/icecoffee-tabdesk-x2-min.png x2"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/modal-buy-now/icecoffee-mobile-x1-min.png x1,
+                ./images/modal-buy-now/icecoffee-mobile-x2-min.png x2
+                "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/modal-buy-now/icecoffee-mobile-x1-min.png"
+                  alt="Ice coffee"
+                />
+              </picture>
+              <p>ice coffee</p>
+            </label>
+          </li>
+          <li>
+            <input id="milkshake-check" type="checkbox" name="cocktail-check" />
+            <label for="milkshake-check">
+              <picture>
+                <source
+                  srcset="./images/modal-buy-now/milkshake-tabdesk-x1-min.png x1,
+                ./images/modal-buy-now/milkshake-tabdesk-x2-min.png x2"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/modal-buy-now/milkshake-mobile-x1-min.png x1,
+                            ./images/modal-buy-now/milkshake-mobile-x2-min.png x2
+                "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/modal-buy-now/milkshake-mobile-x1-min.png"
+                  alt="Milkshake"
+                />
+              </picture>
+              <p>milkshake</p>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <label>
+          <span>
+            <input
+              type="text"
+              name="user_name"
+              pattern="^[a-zA-zа-яА-я]+$"
+              minlength="2"
+              placeholder="Name"
+              required
+            />
+          </span>
+        </label>
+        <label>
+          <span>
+            <input
+              type="tel"
+              name="user_phone"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+              title="xxxxxxxxxx"
+              placeholder="Phone"
+              required
+            />
+          </span>
+        </label>
+        <label>
+          <span>
+            <textarea
+              name="user_massage"
+              cols="30"
+              rows="3"
+              placeholder="Comment"
+            ></textarea>
+          </span>
+        </label>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

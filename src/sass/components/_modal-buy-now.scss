@@ -1,0 +1,22 @@
+.modal {
+    width: 280px;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;}
+.modal-close-button{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 8px;
+        right: 8px;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+}

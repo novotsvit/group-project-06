@@ -1,5 +1,3 @@
-//* SENTERED-FLEX
-
 @mixin flexCenter($type: flex, $main-axis: center, $cross-axis: center) {
   display: $type;
   justify-content: $main-axis;
@@ -7,3 +5,20 @@
 }
 // @include flexCenter ();
 // @include flexCenter(flex, center, center);
+
+@mixin font($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: calc($fs / $lh);
+}
+@mixin absCenteredY() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@mixin absCentered() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

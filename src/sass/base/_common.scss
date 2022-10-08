@@ -34,4 +34,12 @@ button {
 
 body {
   cursor: url(../images/cursor.png), auto;
+  color: $primary-text-color;
+  font-family: 'Montserrat', sans-serif;
+  @include font(400, 16px, 28px);
+  letter-spacing: 0.04em;
+  background-color: $secondary-text-color;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    background-color: $bc-white;
+  }
 }

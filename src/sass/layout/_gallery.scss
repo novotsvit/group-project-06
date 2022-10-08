@@ -1,4 +1,76 @@
 .gallery {
-  &__title {
+  background-image: linear-gradient(
+    to bottom,
+    $bg-color 19%,
+    $bg-color 19%,
+    transparent 19%,
+    transparent 100%
+  );
+}
+.gallery__title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.gallery__wrapper {
+  width: 279px;
+  height: 131px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 7.41px;
+}
+.gallery__slider {
+  animation: sliderAnimate 50s infinite ease;
+  width: 1395px;
+  height: 171px;
+  clear: both;
+  position: relative;
+}
+.gallery__picture {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: left;
+}
+@keyframes sliderAnimate {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: -279px;
+  }
+  20% {
+    left: -558px;
+  }
+  30% {
+    left: -837px;
+  }
+  40% {
+    left: -1116px;
+  }
+  50% {
+    left: -1116px;
+  }
+  60% {
+    left: -1116px;
+  }
+  70% {
+    left: -837px;
+  }
+  80% {
+    left: -558px;
+  }
+  90% {
+    left: -279px;
+  }
+  100% {
+    left: 0;
   }
 }

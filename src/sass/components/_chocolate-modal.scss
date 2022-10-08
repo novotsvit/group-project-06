@@ -1,0 +1,105 @@
+.chocolate-modal__wrapper {
+  @include flexCenter();
+  flex-direction: column;
+}
+.chocolate-modal__img-wrapper {
+  width: 132px;
+  height: 131px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  &::before {
+    content: '';
+    position: relative;
+    top: -7px;
+    width: 132px;
+    height: 131px;
+    background-image: url(../images/chocolate-icecream-modal/chocolate-icecream-modal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    display: block;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/chocolate-icecream-modal/chocolate-icecream-modal@2x.png);
+  }
+}
+.chocolate-modal__nutrients-list {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 39px;
+  @media screen and (min-width: $tablet) {
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+}
+.chocolate-modal__nutrients-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  width: 53px;
+  height: 72px;
+  border-radius: 40px;
+  border: 2px solid #9cbe8f;
+  @media screen and (min-width: $tablet) {
+    gap: 7px;
+    width: 65px;
+    height: 90px;
+  }
+}
+.chocolate-modal__nutrients-amount {
+  @include flexCenter();
+  width: 43px;
+  height: 43px;
+  border-radius: 50px;
+  background-color: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  @include font(500, 10px, 28px);
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    width: 53px;
+    height: 53px;
+    @include font(500, 12px, 28px);
+  }
+}
+.chocolate-modal__nutrients-name {
+  @include font(400, 10px, 12px);
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    @include font(400, 12px, 15px);
+  }
+}
+.chocolate-modal__ingredients-title {
+  @include font(500, 20px, 28px);
+  text-align: center;
+  margin-bottom: 24px;
+}
+.chocolate-modal__ingredients-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 11px;
+  width: 100%;
+  margin-bottom: 48px;
+}
+.chocolate-modal__ingredients-item {
+  display: flex;
+  justify-content: space-between;
+}
+.chocolate-modal__ingredients-name,
+.chocolate-modal__ingredients-amount {
+  @include font(400, 14px, 25px);
+}

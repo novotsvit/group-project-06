@@ -2,6 +2,7 @@
   @include flexCenter();
   min-width: 114px;
   min-height: 42px;
+  margin-top: 24px;
   padding-left: 34px;
   padding-right: 34px;
   padding-top: 12px;
@@ -24,6 +25,10 @@
   }
   @media screen and (min-width: $tablet) {
     min-width: 141px;
+    margin-top: 32px;
     @include font(600, 14px, 17px);
   }
+}
+.modal__button--chocolate {
+  margin-top: 32px;
 }

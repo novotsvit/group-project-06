@@ -1,4 +1,324 @@
-.products {
-  &__title {
+.products-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url(../images/product/mobile/background-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products__item-olive {
+  width: 280px; 
+  height: 420px;
+  background: $olive;
+  border-radius: 24px;
+  margin-bottom: 164px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.products__item-yellow {
+  width: 280px;
+  height: 420px;
+  background: $secondary-yellow;
+  border-radius: 24px;
+  margin-bottom: 164px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.products__item-brown {
+  width: 280px;
+  height: 420px;
+  background:$brown;
+  border-radius: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.products__green-circle {
+  position: absolute;
+  width: 201px;
+  height: 211px;
+  left: 40px;
+  right: 39px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  background-image: url(../images/product/mobile/ice-1-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -10px ;
+}
+
+.products__yellow-circle {
+  position: absolute;
+  width: 201px;
+  height: 211px;
+  left: 40px;
+  right: 39px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  background-image: url(../images/product/mobile/ice-2-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -12px;
+}
+
+.products__brown-circle {
+  position: absolute;
+  width: 201px;
+  height: 211px;
+  left: 40px;
+  right: 39px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  background-image: url(../images/product/mobile/ice-3-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -12px;
+}
+
+.products__over-title {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  margin-bottom: 12px;
+}
+
+.products__title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  margin-bottom: 40px;
+}
+
+.products__subtitle {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  padding-top: 64px;
+  margin-bottom: 40px;
+}
+
+.products__text {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height:1.78;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $primary-text-color;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .products-section {
+    background-image: url(../images/product/mobile/background-mobile@2x.jpg);
   }
+
+  .products__green-circle {
+    background-image: url(../images/product/mobile/ice-1-mobile@2x.png);
+  }
+
+  .products__yellow-circle {
+    background-image: url(../images/product/mobile/ice-2-mobile@2x.png);
+  }
+
+  .products__green-circle {
+    background-image: url(../images/product/mobile/ice-3-mobile@2x.png);
+  }
+
+
+}
+
+@media screen and (min-width: 768px) {
+  .products-section {
+    background-image: url(../images/product/tablet/background-tablet.jpg);
+  }
+
+  .products__green-circle {
+    background-image: url(../images/product/tablet/ice-1-tablet.png);
+  }
+
+  .products__yellow-circle {
+    background-image: url(../images/product/tablet/ice-2-tablet.png);
+  }
+
+  .products__green-circle {
+    background-image: url(../images/product/tablet/ice-3-tablet.png);
+  }
+  
+  .products__over-title {
+    font-size: 22px;
+    line-height: 1.22;
+  }
+
+  .products__title {
+    font-size: 34px;
+    line-height: 1.26;
+  }
+
+  .products__subtitle {
+    font-size: 22px;
+    line-height: 1.22;
+  }
+
+  .products__text {
+  font-size: 14px;
+  line-height: 1.78;
+  }
+
+  .products__item-olive {
+    width: 224px;
+    height: 428px;
+  }
+
+  .products__item-yellow {
+    width: 224px;
+    height: 428px;
+    
+  }
+
+  .products__item-brown {
+    width: 224px;
+    height: 428px;
+  
+  }
+
+  .products__item {
+    flex-basis: calc((100% - 32px)/3);
+  }
+
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .products-section {
+    background-image: url(../images/product/tablet/background-tablet@2x.jpg);
+  }
+
+  .products__green-circle {
+    background-image: url(../images/product/tablet/ice-1-tablet@2x.png);
+  }
+
+  .products__yellow-circle {
+    background-image: url(../images/product/tablet/ice-2-tablet@2x.png);
+  }
+
+  .products__green-circle {
+    background-image: url(../images/product/tablet/ice-3-tablet@2x.png);
+}
+}
+
+@media screen and (min-width: 1200px) {
+
+.products__green-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .products__yellow-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .products__brown-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .products-section {
+    background-image: url(../images/product/desctop/background-desctop.jpg);
+  }
+
+  .products__green-circle {
+    background-image: url(../images/product/desctop/ice-1-desctop.png);
+  }
+
+  .products__yellow-circle {
+    background-image: url(../images/product/desctop/ice-2-desctop.png);
+  }
+
+  .products__green-circle {
+    background-image: url(../images/product/desctop/ice-3-desctop.png);
+  }
+
+  .products__item-olive {
+    width: 370px;
+    height: 535px;
+
+  }
+
+  .products__item-yellow {
+    width: 370px;
+    height: 535px;
+
+  }
+
+  .products__item-brown {
+    width: 370px;
+    height: 535px;
+
+  }
+
+  .products__over-title {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .products__title {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+
+  .products__subtitle {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .products__text {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .products-section {
+    background-image: url(../images/product/desctop/background-desctop@2x.jpg);
+  }
+
+  .products__green-circle {
+    background-image: url(../images/product/desctop/ice-1-desctop@2x.png);
+  }
+
+  .products__yellow-circle {
+    background-image: url(../images/product/desctop/ice-2-desctop@2x.png);
+  }
+
+  .products__green-circle {
+    background-image: url(../images/product/desctop/ice-3-desctop@2x.png);
+}
 }

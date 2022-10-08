@@ -27,6 +27,8 @@
               type="text"
               name="name"
               class="modal-form__input"
+              pattern="[a-zA-Zа-яА-ЯіІїЇ]+$"
+              minlength="2"
               placeholder="Name"
               required
           /></label>
@@ -37,6 +39,8 @@
               type="tel"
               name="phone-number"
               class="modal-form__input"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
               placeholder="Phone"
               required
           /></label>
@@ -47,6 +51,7 @@
               type="email"
               name="email"
               class="modal-form__input"
+              pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
               placeholder="Email"
               required
           /></label>

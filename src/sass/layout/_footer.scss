@@ -48,6 +48,7 @@
 
   margin-bottom: 40px;
 
+  font-family: 'Montserrat';
   @include font(700, 12px, 22px);
 
   &__text {
@@ -75,6 +76,7 @@
   }
 
   &__text {
+    font-family: 'Montserrat';
     @include font(700, 14px, 21px);
 
     color: $accent-line-color;
@@ -114,6 +116,11 @@
 
   .footer-list {
     margin-bottom: 32px;
+
+    &__icon {
+      width: 34px;
+      height: 34px;
+    }
   }
 
   .footer-contact {
@@ -132,3 +139,46 @@
 }
 
 //? ================== DESKTOP VERSION ==================
+
+@media screen and (min-width: $desktop) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .footer__text {
+    width: 100%;
+    @include font(400, 30px, 37px);
+    letter-spacing: 0.04em;
+
+    margin-bottom: 14px;
+  }
+
+  .footer__title {
+    width: 100%;
+    margin-bottom: 54px;
+
+    @include font(700, 58px, 71px);
+    letter-spacing: 0.06em;
+  }
+
+  .footer-list {
+    margin-bottom: 40px;
+  }
+
+  .footer-contact {
+    margin-bottom: 60px;
+
+    @include font(700, 16px, 30px);
+  }
+
+  .copyright {
+    padding: 12px;
+
+    &__text {
+      @include font(700, 12px, 22px);
+      letter-spacing: 0.02em;
+    }
+  }
+}

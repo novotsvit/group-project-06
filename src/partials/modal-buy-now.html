@@ -1,18 +1,23 @@
-<div class="backdrop__is-hidden" data-modal-buy-now>
+<div class="backdrop is-hidden" data-modal-buy-now>
   <div class="modal">
-    <button type="button" class="modal-close-button" data-modal-close-buy-now>
+    <button type="button" class="modal__close-button" data-modal-close-buy-now>
       <svg>
         <use href="./images/icons.svg#cross-close"></use>
       </svg>
     </button>
     <form>
-      <p>Buy now</p>
-      <div>
-        <ul>
-          <li>
-            <input id="icecream-check" type="checkbox" name="cocktail-check" />
-            <label for="icecream-check">
-              <picture>
+      <p class="modal__title">Buy now</p>
+      <div class="modal-image">
+        <ul class="modal-cards">
+          <li class="modal-cards__item">
+            <input
+              id="icecream-check"
+              type="checkbox"
+              name="cocktail-check"
+              class="modal-form-check visually-hidden"
+            />
+            <label for="icecream-check" class="modal-cards__link">
+              <picture class="modal-cards__picture">
                 <source
                   srcset="./images/modal-buy-now/icecream-tabdesk-x1-min.png x1,
                 ./images/modal-buy-now/icecream-tabdesk-x2-min.png x2"
@@ -32,10 +37,15 @@
               <p>ice cream</p>
             </label>
           </li>
-          <li>
-            <input id="icecoffee-check" type="checkbox" name="cocktail-check" />
-            <label for="icecoffee-check">
-              <picture>
+          <li class="modal-cards__item">
+            <input
+              id="icecoffee-check"
+              type="checkbox"
+              name="cocktail-check"
+              class="modal-form-check visually-hidden"
+            />
+            <label for="icecoffee-check" class="modal-cards__link">
+              <picture class="modal-cards__picture">
                 <source
                   srcset="./images/modal-buy-now/icecoffee-tabdesk-x1-min.png x1,
                 ./images/modal-buy-now/icecoffee-tabdesk-x2-min.png x2"
@@ -55,10 +65,15 @@
               <p>ice coffee</p>
             </label>
           </li>
-          <li>
-            <input id="milkshake-check" type="checkbox" name="cocktail-check" />
-            <label for="milkshake-check">
-              <picture>
+          <li class="modal-cards__item">
+            <input
+              id="milkshake-check"
+              type="checkbox"
+              name="cocktail-check"
+              class="modal-form-check visually-hidden"
+            />
+            <label for="milkshake-check" class="modal-cards__link">
+              <picture class="modal-cards__picture">
                 <source
                   srcset="./images/modal-buy-now/milkshake-tabdesk-x1-min.png x1,
                 ./images/modal-buy-now/milkshake-tabdesk-x2-min.png x2"

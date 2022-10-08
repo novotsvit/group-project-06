@@ -1,4 +1,53 @@
 .advantages {
-  &__title {
+  background: $bg-color;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  font-weight: 700;
+  text-align: center;
+  color: $secondary-text-color;
+}
+.advantages__list {
+  display: flex;
+  //   flex-direction: column;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+}
+.advantages__value {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(36 / 480 * 100vw);
+  line-height: calc(42 / 480 * 100vw);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.advantages__text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(12 / 480 * 100vw);
+  line-height: calc(20 / 480 * 100vw);
+}
+@media screen and (min-width: $mobile) {
+  .advantages__value {
+    @include font(700, 36px, 42px);
+  }
+  .advantages__text {
+    @include font(700, 12px, 20px);
+  }
+}
+@media screen and (min-width: $tablet) {
+  .advantages__value {
+    @include font(700, 48px, 59px);
+  }
+  .advantages__text {
+    @include font(400, 14px, 24px);
+  }
+}
+@media screen and (min-width: $desktop) {
+  .advantages__value {
+    @include font(700, 58px, 71px);
+  }
+  .advantages__text {
+    @include font(400, 16px, 28px);
   }
 }

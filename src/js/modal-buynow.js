@@ -9,6 +9,6 @@
   buy.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    buy.modal.classList.toggle("is-hidden-buy-now");
+    buy.modal.classList.toggle("is-hidden");
   }
 })();

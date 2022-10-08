@@ -1,16 +1,20 @@
-.modal__how-its-made {
-  padding: 32px 60px;
-  width: 568px;
-  height: 449px;
-  background: $secondary-text-color;
-  border: 2px solid $primary-yellow;
-  border-radius: 10px;
-}
-.modal__video {
-  background: #000000;
-  border-radius: 10px;
-}
-.modal__report {
-  @include font(400, 16px, 22px);
-  color: $primary-text-color;
-}
+@media screen and (max-width: $mobile){
+      .modal__video {
+         width: 224px;}
+        }
+    .modal__how-its-made {
+      padding: 32px 60px;
+      width: 568px;
+      height: 449px;
+      background: $secondary-text-color;
+      border: 2px solid $primary-yellow;
+      border-radius: 10px;
+    }
+    .modal__video {
+      background: $video-background;
+      border-radius: 10px;
+    }
+    .modal__report {
+      @include font(400, 16px, 22px);
+      color: $primary-text-color;
+    }

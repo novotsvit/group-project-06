@@ -86,12 +86,6 @@
 //? ================== TABLET VERSION ==================
 
 @media screen and (min-width: $tablet) {
-  .container {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   .footer__wrapper {
     display: flex;
     justify-content: space-between;

@@ -14,27 +14,27 @@
               id="icecream-check"
               type="checkbox"
               name="cocktail-check"
-              class="modal-form-check visually-hidden"
+              class="modal-form-check_icecream visually-hidden"
             />
-            <label for="icecream-check" class="modal-cards__link">
-              <picture class="modal-cards__picture">
+            <label for="icecream-check" class="modal-cards__link icecream-link">
+              <picture class="modal-cards__picture icecream-image">
                 <source
-                  srcset="./images/modal-buy-now/icecream-tabdesk-x1-min.png x1,
-                ./images/modal-buy-now/icecream-tabdesk-x2-min.png x2"
+                  srcset="./images/modal-buy-now/tablet/icecream-tabdesk-x1-min.png x1,
+                ./images/modal-buy-now/tablet/icecream-tabdesk-x2-min.png x2"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/modal-buy-now/icecream-mobile-x1-min.png x1,
-                ./images/modal-buy-now/icecream-mobile-x2-min.png x2
+                  srcset="./images/modal-buy-now/mobile/icecream-mobile-x1-min.png x1,
+                ./images/modal-buy-now/mobile/icecream-mobile-x2-min.png x2
                 "
                   media="(max-width: 767px)"
                 />
                 <img
-                  src="./images/modal-buy-now/icecream-mobile-x1-min.png"
+                  src="./images/modal-buy-now/mobile/icecream-mobile-x1-min.png"
                   alt="Ice cream"
                 />
               </picture>
-              <p>ice cream</p>
+              <p class="modal-cards__title">ice cream</p>
             </label>
           </li>
           <li class="modal-cards__item">
@@ -42,27 +42,30 @@
               id="icecoffee-check"
               type="checkbox"
               name="cocktail-check"
-              class="modal-form-check visually-hidden"
+              class="modal-form-check_icecoffee visually-hidden"
             />
-            <label for="icecoffee-check" class="modal-cards__link">
-              <picture class="modal-cards__picture">
+            <label
+              for="icecoffee-check"
+              class="modal-cards__link icecoffee-link"
+            >
+              <picture class="modal-cards__picture icecoffee-image">
                 <source
-                  srcset="./images/modal-buy-now/icecoffee-tabdesk-x1-min.png x1,
-                ./images/modal-buy-now/icecoffee-tabdesk-x2-min.png x2"
+                  srcset="./images/modal-buy-now/tablet/icecoffee-tabdesk-x1-min.png x1,
+                ./images/modal-buy-now/tablet/icecoffee-tabdesk-x2-min.png x2"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/modal-buy-now/icecoffee-mobile-x1-min.png x1,
-                ./images/modal-buy-now/icecoffee-mobile-x2-min.png x2
+                  srcset="./images/modal-buy-now/mobile/icecoffee-mobile-x1-min.png x1,
+                ./images/modal-buy-now/mobile/icecoffee-mobile-x2-min.png x2
                 "
                   media="(max-width: 767px)"
                 />
                 <img
-                  src="./images/modal-buy-now/icecoffee-mobile-x1-min.png"
+                  src="./images/modal-buy-now/mobile/icecoffee-mobile-x1-min.png"
                   alt="Ice coffee"
                 />
               </picture>
-              <p>ice coffee</p>
+              <p class="modal-cards__title">ice coffee</p>
             </label>
           </li>
           <li class="modal-cards__item">
@@ -70,37 +73,41 @@
               id="milkshake-check"
               type="checkbox"
               name="cocktail-check"
-              class="modal-form-check visually-hidden"
+              class="modal-form-check_milkshake visually-hidden"
             />
-            <label for="milkshake-check" class="modal-cards__link">
-              <picture class="modal-cards__picture">
+            <label
+              for="milkshake-check"
+              class="modal-cards__link milkshake-link"
+            >
+              <picture class="modal-cards__picture milkshake-image">
                 <source
-                  srcset="./images/modal-buy-now/milkshake-tabdesk-x1-min.png x1,
-                ./images/modal-buy-now/milkshake-tabdesk-x2-min.png x2"
+                  srcset="./images/modal-buy-now/tablet/milkshake-tabdesk-x1-min.png x1,
+                ./images/modal-buy-now/tablet/milkshake-tabdesk-x2-min.png x2"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/modal-buy-now/milkshake-mobile-x1-min.png x1,
-                            ./images/modal-buy-now/milkshake-mobile-x2-min.png x2
+                  srcset="./images/modal-buy-now/mobile/milkshake-mobile-x1-min.png x1,
+                            ./images/modal-buy-now/mobile/milkshake-mobile-x2-min.png x2
                 "
                   media="(max-width: 767px)"
                 />
                 <img
-                  src="./images/modal-buy-now/milkshake-mobile-x1-min.png"
+                  src="./images/modal-buy-now/mobile/milkshake-mobile-x1-min.png"
                   alt="Milkshake"
                 />
               </picture>
-              <p>milkshake</p>
+              <p class="modal-cards__title">milkshake</p>
             </label>
           </li>
         </ul>
       </div>
-      <div>
-        <label>
-          <span>
+      <div class="modal-form-input-gread">
+        <label class="modal-form-coctail-label">
+          <span class="modal-form-coctail-input-wrapper">
             <input
               type="text"
               name="user_name"
+              class="modal-form-coctail-inpt"
               pattern="^[a-zA-zа-яА-я]+$"
               minlength="2"
               placeholder="Name"
@@ -108,11 +115,12 @@
             />
           </span>
         </label>
-        <label>
-          <span>
+        <label class="modal-form-coctail-label">
+          <span class="modal-form-coctail-input-wrapper">
             <input
               type="tel"
               name="user_phone"
+              class="modal-form-coctail-inpt"
               pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
               title="xxxxxxxxxx"
               placeholder="Phone"
@@ -120,19 +128,22 @@
             />
           </span>
         </label>
-        <label>
-          <span>
+        <label class="modal-form-coctail-label">
+          <span class="modal-form-coctail-input-wrapper">
             <textarea
               name="user_massage"
               cols="30"
               rows="3"
+              class="modal-form-coctail-inpt massage"
               placeholder="Comment"
             ></textarea>
           </span>
         </label>
       </div>
-      <div>
-        <button type="submit">Submit</button>
+      <div class="modal-button-form-wrapper">
+        <button class="btn-bg__buy-now btn-bg__submit" type="submit">
+          Submit
+        </button>
       </div>
     </form>
   </div>

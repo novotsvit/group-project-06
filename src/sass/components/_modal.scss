@@ -1,0 +1,19 @@
+.modal {
+    width: 280px;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border: 2px solid $primary-yellow;
+    border-radius: 10px;
+
+    @media screen and (max-width: 1199px) {
+        overflow-y: scroll;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 568px;
+        top: 350px;
+    }
+}

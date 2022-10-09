@@ -1,21 +1,13 @@
-.modal {
-    width: 280px;
-    position: absolute;
-    top: 500px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #FFFFFF;
-    border: 2px solid $primary-yellow;
-    border-radius: 10px;
-@media screen and (max-width: 1199px) {
-        overflow-y: scroll;
-    }
-@media screen and (min-width: $tablet) {
-    width: 568px;
-    top: 350px;
-}
-}
 
+.modal-cards__title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;}
 .modal__title {
     font-family: 'Seymour One';
     font-style: normal;
@@ -54,12 +46,121 @@
     }
 }
 .modal-cards__link{
+    width: 130px;
+        height: 135px;
     display: flex;
         align-items: flex-end;
         justify-content: center;
-        width: 130px;
-        height: 135px;
         padding-bottom: 20px;
         filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
         border-radius: 15.7808px;
 }
+.modal-cards__picture{
+    position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+        width: 130px;
+        height: 130px;
+}
+.modal-cards__picture::before{
+    content: '';
+        width: 130px;
+        height: 130px;
+        -webkit-border-radius: 98.6301px;
+        -moz-border-radius: 98.6301px;
+        border-radius: 98.6301px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 3.8%);
+        z-index: -1;
+}
+.icecream-image.modal-cards__picture::before {
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.icecoffee-image.modal-cards__picture::before{
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+.milkshake-image.modal-cards__picture::before {
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+.icecream-link.modal-cards__link {
+    border: 2px solid #96AF8C;
+    cursor: pointer;
+
+    .modal-form-check_icecream:checked+& {
+        background-color: #96AF8C;
+    }
+}
+
+.icecoffee-link.modal-cards__link {
+    border: 2px solid #EFD478;
+    cursor: pointer;
+
+    .modal-form-check_icecoffee:checked+& {
+        background-color: #EFD478;
+    }
+}
+
+.milkshake-link.modal-cards__link{
+    border: 2px solid #D6936D;
+    cursor: pointer;
+
+    .modal-form-check_milkshake:checked+& {
+        background-color: #D6936D;
+    }
+}
+.modal-form-input-gread {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: $tablet) {
+        gap: 16px;
+        padding-bottom: 32px;
+    }
+}
+
+.modal-form-coctail-inpt {
+    width: 224px;
+
+    @media screen and (min-width: $tablet) {
+        width: 368px;
+    }
+}
+
+.modal-form-coctail-inpt {
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #000;
+
+    &.massage {
+        resize: none;
+    }
+}
+
+.modal-button-form-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 28px;
+
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 32px;
+    }
+}
+

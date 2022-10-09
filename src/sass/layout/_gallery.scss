@@ -1,38 +1,29 @@
-.gallery {
-  background-image: linear-gradient(
-    to bottom,
-    $bg-color 19%,
-    $bg-color 19%,
-    $bg-color-gray 19%,
-    $bg-color-gray 100%
-  );
+.galery__container {
+  @include mq(mob-only) {
+    margin-top: -24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @include mq(tab) {
-    background-image: linear-gradient(
-      to bottom,
-      $bg-color 50%,
-      $bg-color 50%,
-      $bg-color-gray 50%,
-      $bg-color-gray 100%
-    );
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   @include mq(desk) {
-    background-image: linear-gradient(
-      to bottom,
-      $bg-color 22.3%,
-      $bg-color 22.3%,
-      transparent 22.3%,
-      transparent 100%
-    );
+    transform: translate(-50%, -94px);
   }
 }
-
 .gallery__wrapper {
+  margin-left: auto;
+  margin-right: auto;
   width: 279px;
   height: 131px;
   overflow: hidden;
   padding: 0;
   border-radius: 7.41px;
   @include mq(tab) {
+    position: relative;
     width: 704px;
     height: 327px;
     border-radius: 18px;
@@ -46,7 +37,7 @@
 .gallery__slider {
   display: flex;
   width: 1395px;
-  height: 171px;
+  height: 131px;
   clear: both;
   position: relative;
   @include mq(tab) {
@@ -57,12 +48,12 @@
     width: 5065px;
     height: 422px;
   }
-  animation: sliderAnimateMobile 100s infinite ease;
+  animation: sliderAnimateMobile 50s infinite ease-in-out;
   @include mq(tab) {
-    animation: sliderAnimateTablet 100s infinite ease;
+    animation: sliderAnimateTablet 50s infinite ease-in-out;
   }
   @include mq(desk) {
-    animation: sliderAnimateDesktop 100s infinite ease;
+    animation: sliderAnimateDesktop 50s infinite ease-in-out;
   }
 }
 .gallery__picture {
@@ -72,38 +63,59 @@
   float: left;
 }
 .gallery__img {
-  flex-basis: calc(100% + 0px);
+  flex-basis: 100%;
 }
 @keyframes sliderAnimateMobile {
   0% {
     left: 0;
   }
-  10% {
+  8% {
+    left: 0;
+  }
+  12% {
     left: -279px;
   }
   20% {
+    left: -279px;
+  }
+  24% {
     left: -558px;
   }
-  30% {
+  32% {
+    left: -558px;
+  }
+  36% {
     left: -837px;
   }
-  40% {
+  44% {
+    left: -837px;
+  }
+  48% {
     left: -1116px;
   }
-  50% {
+  56% {
     left: -1116px;
   }
   60% {
-    left: -1116px;
-  }
-  70% {
     left: -837px;
+  }
+  68% {
+    left: -837px;
+  }
+  72% {
+    left: -558px;
   }
   80% {
     left: -558px;
   }
-  90% {
+  84% {
     left: -279px;
+  }
+  92% {
+    left: -279px;
+  }
+  96% {
+    left: 0;
   }
   100% {
     left: 0;
@@ -114,32 +126,53 @@
   0% {
     left: 0;
   }
-  10% {
+  8% {
+    left: 0;
+  }
+  12% {
     left: -704px;
   }
   20% {
+    left: -704px;
+  }
+  24% {
     left: -1408px;
   }
-  30% {
+  32% {
+    left: -1408px;
+  }
+  36% {
     left: -2112px;
   }
-  40% {
+  44% {
+    left: -2112px;
+  }
+  48% {
     left: -2816px;
   }
-  50% {
+  56% {
     left: -2816px;
   }
   60% {
-    left: -2816px;
-  }
-  70% {
     left: -2112px;
+  }
+  68% {
+    left: -2112px;
+  }
+  72% {
+    left: -1408px;
   }
   80% {
     left: -1408px;
   }
-  90% {
+  84% {
     left: -704px;
+  }
+  92% {
+    left: -704px;
+  }
+  96% {
+    left: 0;
   }
   100% {
     left: 0;
@@ -150,31 +183,52 @@
   0% {
     left: 0;
   }
-  10% {
+  8% {
+    left: 0;
+  }
+  12% {
     left: -1013px;
   }
   20% {
+    left: -1013px;
+  }
+  24% {
     left: -2026px;
   }
-  30% {
+  32% {
+    left: -2026px;
+  }
+  36% {
     left: -3039px;
   }
-  40% {
+  44% {
+    left: -3039px;
+  }
+  48% {
     left: -4052px;
   }
-  50% {
+  56% {
     left: -4052px;
   }
   60% {
-    left: -4052px;
-  }
-  70% {
     left: -3039px;
+  }
+  68% {
+    left: -3039px;
+  }
+  72% {
+    left: -2026px;
   }
   80% {
     left: -2026px;
   }
-  90% {
+  84% {
+    left: -2026px;
+  }
+  92% {
+    left: -1013px;
+  }
+  96% {
     left: -1013px;
   }
   100% {

@@ -1,157 +1,164 @@
 <section class="gallery">
-  <h2 class="gallery__title visually-hidden">Gallery</h2>
-  <div class="gallery__wrapper">
-    <div class="gallery__slider">
-      <picture class="gallery__picture">
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./images/gallery/ic-gallery-1@1x_lg.jpg 1x,
-            images/gallery/ic-gallery-1@2x_lg.jpg   2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/gallery/ic-gallery-1@1x_md.jpg 1x,
-            images/gallery/ic-gallery-1@2x_md.jpg   2x
-          "
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/gallery/ic-gallery-1@1x_sm.jpg 1x,
-            images/gallery/ic-gallery-1@2x_sm.jpg   2x
-          "
-        />
-        <img
-          src="./images/gallery/ic-gallery-1@1x_sm.jpg"
-          alt="blueberry ice cream"
-          width="279"
-          height="131"
-          loading="lazy"
-        />
-      </picture>
-      <picture class="gallery__picture">
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./images/gallery/ic-gallery-2@1x_lg.jpg 1x,
-            images/gallery/ic-gallery-2@2x_lg.jpg   2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/gallery/ic-gallery-2@1x_md.jpg 1x,
-            images/gallery/ic-gallery-2@2x_md.jpg   2x
-          "
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/gallery/ic-gallery-2@1x_sm.jpg 1x,
-            images/gallery/ic-gallery-2@2x_sm.jpg   2x
-          "
-        />
-        <img
-          src="./images/gallery/ic-gallery-2@1x_sm.jpg"
-          alt="berry ice cream"
-          width="279"
-          height="131"
-          loading="lazy"
-        />
-      </picture>
-      <picture class="gallery__picture">
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./images/gallery/ic-gallery-3@1x_lg.jpg 1x,
-            images/gallery/ic-gallery-3@2x_lg.jpg   2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/gallery/ic-gallery-3@1x_md.jpg 1x,
-            images/gallery/ic-gallery-3@2x_md.jpg   2x
-          "
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/gallery/ic-gallery-3@1x_sm.jpg 1x,
-            images/gallery/ic-gallery-3@2x_sm.jpg   2x
-          "
-        />
-        <img
-          src="./images/gallery/ic-gallery-3@1x_sm.jpg"
-          alt="ice cream"
-          width="279"
-          height="131"
-          loading="lazy"
-        />
-      </picture>
-      <picture class="gallery__picture">
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./images/gallery/ic-gallery-4@1x_lg.jpg 1x,
-            images/gallery/ic-gallery-4@2x_lg.jpg   2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/gallery/ic-gallery-4@1x_md.jpg 1x,
-            images/gallery/ic-gallery-4@2x_md.jpg   2x
-          "
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/gallery/ic-gallery-4@1x_sm.jpg 1x,
-            images/gallery/ic-gallery-4@2x_sm.jpg   2x
-          "
-        />
-        <img
-          src="./images/gallery/ic-gallery-4@1x_sm.jpg"
-          alt="ice coffee"
-          width="279"
-          height="131"
-          loading="lazy"
-        />
-      </picture>
-      <picture class="gallery__picture">
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./images/gallery/ic-gallery-5@1x_lg.jpg 1x,
-            images/gallery/ic-gallery-5@2x_lg.jpg   2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/gallery/ic-gallery-5@1x_md.jpg 1x,
-            images/gallery/ic-gallery-5@2x_md.jpg   2x
-          "
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/gallery/ic-gallery-5@1x_sm.jpg 1x,
-            images/gallery/ic-gallery-5@2x_sm.jpg   2x
-          "
-        />
-        <img
-          src="./images/gallery/ic-gallery-5@1x_sm.jpg"
-          alt="milkshakes"
-          width="279"
-          height="131"
-          loading="lazy"
-        />
-      </picture>
+  <div class="galery__container">
+    <h2 class="gallery__title visually-hidden">Gallery</h2>
+    <div class="gallery__wrapper">
+      <div class="gallery__slider">
+        <picture class="gallery__picture">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/ic-gallery-1@1x_lg.jpg 1x,
+              images/gallery/ic-gallery-1@2x_lg.jpg   2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/ic-gallery-1@1x_md.jpg 1x,
+              images/gallery/ic-gallery-1@2x_md.jpg   2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/ic-gallery-1@1x_sm.jpg 1x,
+              images/gallery/ic-gallery-1@2x_sm.jpg   2x
+            "
+          />
+          <img
+            class="gallery__img"
+            src="./images/gallery/ic-gallery-1@1x_sm.jpg"
+            alt="blueberry ice cream"
+            width="279"
+            height="131"
+            loading="lazy"
+          />
+        </picture>
+        <picture class="gallery__picture">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/ic-gallery-2@1x_lg.jpg 1x,
+              images/gallery/ic-gallery-2@2x_lg.jpg   2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/ic-gallery-2@1x_md.jpg 1x,
+              images/gallery/ic-gallery-2@2x_md.jpg   2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/ic-gallery-2@1x_sm.jpg 1x,
+              images/gallery/ic-gallery-2@2x_sm.jpg   2x
+            "
+          />
+          <img
+            class="gallery__img"
+            src="./images/gallery/ic-gallery-2@1x_sm.jpg"
+            alt="berry ice cream"
+            width="279"
+            height="131"
+            loading="lazy"
+          />
+        </picture>
+        <picture class="gallery__picture">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/ic-gallery-3@1x_lg.jpg 1x,
+              images/gallery/ic-gallery-3@2x_lg.jpg   2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/ic-gallery-3@1x_md.jpg 1x,
+              images/gallery/ic-gallery-3@2x_md.jpg   2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/ic-gallery-3@1x_sm.jpg 1x,
+              images/gallery/ic-gallery-3@2x_sm.jpg   2x
+            "
+          />
+          <img
+            class="gallery__img"
+            src="./images/gallery/ic-gallery-3@1x_sm.jpg"
+            alt="ice cream"
+            width="279"
+            height="131"
+            loading="lazy"
+          />
+        </picture>
+        <picture class="gallery__picture">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/ic-gallery-4@1x_lg.jpg 1x,
+              images/gallery/ic-gallery-4@2x_lg.jpg   2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/ic-gallery-4@1x_md.jpg 1x,
+              images/gallery/ic-gallery-4@2x_md.jpg   2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/ic-gallery-4@1x_sm.jpg 1x,
+              images/gallery/ic-gallery-4@2x_sm.jpg   2x
+            "
+          />
+          <img
+            class="gallery__img"
+            src="./images/gallery/ic-gallery-4@1x_sm.jpg"
+            alt="ice coffee"
+            width="279"
+            height="131"
+            loading="lazy"
+          />
+        </picture>
+        <picture class="gallery__picture">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/ic-gallery-5@1x_lg.jpg 1x,
+              images/gallery/ic-gallery-5@2x_lg.jpg   2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/ic-gallery-5@1x_md.jpg 1x,
+              images/gallery/ic-gallery-5@2x_md.jpg   2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/ic-gallery-5@1x_sm.jpg 1x,
+              images/gallery/ic-gallery-5@2x_sm.jpg   2x
+            "
+          />
+          <img
+            class="gallery__img"
+            src="./images/gallery/ic-gallery-5@1x_sm.jpg"
+            alt="milkshakes"
+            width="279"
+            height="131"
+            loading="lazy"
+          />
+        </picture>
+      </div>
     </div>
   </div>
 </section>

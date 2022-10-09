@@ -1,4 +1,121 @@
 .advantages {
-  &__title {
+  background: $bg-color;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  font-weight: 700;
+  text-align: center;
+  color: $secondary-text-color;
+}
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 21px;
+}
+.advantages__item {
+  max-width: 230px;
+}
+.advantages__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.advantages__value {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(36 / 480 * 100vw);
+  line-height: calc(42 / 480 * 100vw);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-flex;
+}
+.advantages__value_cow:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/advantages/cow.png);
+  margin-bottom: 16px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $primary-yellow;
+  border-radius: 50%;
+}
+.advantages__value_weight:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/advantages/weight.png);
+  margin-bottom: 16px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $primary-yellow;
+  border-radius: 50%;
+}
+.advantages__value_ice:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/advantages/ice\ crema.png);
+  margin-bottom: 16px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $primary-yellow;
+  border-radius: 50%;
+}
+
+.advantages__text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(12 / 480 * 100vw);
+  line-height: calc(20 / 480 * 100vw);
+  text-align: center;
+
+  margin-top: 18px;
+}
+@media screen and (min-width: $mobile) {
+  .advantages__value {
+    @include font(700, 36px, 42px);
+  }
+  .advantages__text {
+    @include font(700, 12px, 20px);
+    margin-top: 18px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .advantages__list {
+    gap: 80px;
+  }
+  .advantages__item {
+    max-width: 152px;
+  }
+  .advantages__value {
+    @include font(700, 48px, 59px);
+  }
+  .advantages__text {
+    @include font(400, 14px, 24px);
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .advantages__list {
+    gap: 32px;
+  }
+  .advantages__item {
+    max-width: 368px;
+  }
+  .advantages__value {
+    @include font(700, 58px, 71px);
+  }
+  .advantages__text {
+    @include font(400, 16px, 28px);
+    margin-top: 16px;
   }
 }

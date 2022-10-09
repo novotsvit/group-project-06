@@ -1,4 +1,172 @@
 .hero-header {
+  @media screen and (min-width: $mobile) {
+    .container {
+      width: 480px;
+    }
+  }
+
+  width: 100%;
+  height: 100%;
+  background-color:#84a178;
   &__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    color: #FCFCFC;
+  }
+  &__span {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+  }
+}
+
+.hero-header__btn {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    .container {
+      width: 768px;
+    }
+    display: flex;
+  }
+}
+
+.hero-header__menu-button {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #FCFCFC;
+  border: 2px solid #F8D24E;
+  @media screen and (min-width: $desktop) {
+    .container {
+      width: 1200px;
+    }
+    display: none;
+  }
+}
+
+.hero-header__points-left-mob {
+  @media screen and (min-width: $tablet) {
+    .container {
+      width: 768px;
+    }
+    display: none;
+  }
+}
+
+.hero-header__points-left-tab {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    .container {
+      width: 768px;
+    }
+    display: flex;
+  }
+  // @media screen and (min-width: $tablet) {
+  //   .container {
+  //     width: 1200px;
+  //   }
+  //   display: none;
+  // }
+}
+
+.hero-header__points-raight-mob {
+  @media screen and (min-width: $tablet) {
+    .container {
+      width: 768px;
+    }
+    display: none;
+  }
+}
+
+.hero-header__points-raight-tab {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    .container {
+      width: 768px;
+    }
+    display: flex;
+  }
+  // @media screen and (min-width: $tablet) {
+  //   .container {
+  //     width: 1200px;
+  //   }
+  //   display: none;
+  // }
+}
+
+.hero-header__points-desk {
+  display: none;
+  // @media screen and (min-width: $desktop) {
+  //   .container {
+  //     width: 1200px;
+  //   }
+  //   display: flex;
+  // }
+}
+
+.hero-header__arrow {
+  fill: #F8D24E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-header__pict{
+  display: none;
+  @media screen and (min-width: $tablet) {
+    .container {
+      width: 768px;
+    }
+    display: flex;
+  }
+}
+
+.hero-header__pretitle {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    .container {
+      width: 768px;
+    }
+    display: flex;
+  }
+}
+
+.hero-header__list-advertising {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    .container {
+      width: 768px;
+    }
+    display: flex;
   }
 }

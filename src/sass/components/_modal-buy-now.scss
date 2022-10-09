@@ -1,20 +1,4 @@
-.modal {
-  width: 280px;
-  position: absolute;
-  top: 500px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #ffffff;
-  border: 2px solid $primary-yellow;
-  border-radius: 10px;
-  @media screen and (max-width: 1199px) {
-    overflow-y: scroll;
-  }
-  @media screen and (min-width: $tablet) {
-    width: 568px;
-    top: 350px;
-  }
-}
+
 
 .modal-cards__title{
     font-family: "Montserrat", sans-serif;
@@ -25,21 +9,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #131313;}
-.modal__title {
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000;
-  // padding-top: 28px;
-  text-align: center;
-  @media screen and (min-width: $tablet) {
-    // padding-top: 32px;
-    font-size: 20px;
-    line-height: 1.4;
-  }
-}
+
 .modal-image {
   display: flex;
   justify-content: center;
@@ -133,52 +103,3 @@
         background-color: #D6936D;
     }
 }
-.modal-form-input-gread {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 12px;
-    align-items: center;
-    padding-bottom: 24px;
-
-    @media screen and (min-width: $tablet) {
-        gap: 16px;
-        padding-bottom: 32px;
-    }
-}
-
-.modal-form-coctail-inpt {
-    width: 224px;
-
-    @media screen and (min-width: $tablet) {
-        width: 368px;
-    }
-}
-
-.modal-form-coctail-inpt {
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    padding-left: 12px;
-    padding-top: 8px;
-    padding-bottom: 7px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.4;
-    color: #000;
-
-    &.massage {
-        resize: none;
-    }
-}
-
-.modal-button-form-wrapper {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 28px;
-
-    @media screen and (min-width: $tablet) {
-        padding-bottom: 32px;
-    }
-}
-
